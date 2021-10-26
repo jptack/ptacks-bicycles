@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!--
+****************************************************
+Title: Ptack's Bicycles Homepage
+Use: To serve as the homepage for the shop's website
+Author: Joe Ptack
+School/Term: Southern Illinois University, Fall 2021
+Developed: August 29, 2021
+Tested: October 10, 2021 with Firefox
+*****************************************************
+-->
+<html lang="en-US">
+<head>
+        <meta charset="utf-8">
+        <title>Ptack's Bicycles</title>
+        <meta name='description' content='The Seventh Most Popular Bike Shop in Chicago'>
+        <meta name='keywords' content='Bicycles, Bikes, Chicago'>
+        <link rel="stylesheet" href="mystyle.css">
+		<link rel="stylesheet" href="slicknav.css">
+		<link rel="shortcut icon" href="media/favicon.ico">
+		<nav id="nav_menu">
+			<ul class="nav-menu-style">
+				<li><a href="index.htm">Home</a></li>
+				<li><a href="contact.htm">Contact</a></li>
+				<li><a href="rentals.htm">Rentals</a></li>
+				<li><a href="sales.htm">Sales</a></li>
+				<li><a href="services.htm">Services</a></li>
+			</ul>
+        </nav>
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+		<script src="jquery.slicknav.min.js"></script>
+		<script>
+			$('.nav-menu-style').slicknav();
+		</script>
+</head>
+<body>
+    <header>
+        <h1>Ptack's Bicycles</h1>
+            <address>2021 Bisickle Ln<br>
+                <a> Chicago, Illinois<br></a>
+                <a> 1-800-555-2453 </a>
+                    </address>
+            <h3>Chicago's Premier Bike Shop!</h3>
+    </header>
+    <div class="image"></div>
+		<figcaption>Offering an elite selection of bikes</figcaption>
+    <main>
+        <section>Bicycles in stock:</section>
+        <ul>
+            <li>Mach Bike</li>
+            <li>Acro Bike</li>
+            <li>Mountain Bike</li>
+            <li>Triathlon Bike</li>
+            <li>Penny Farthing</li>
+        </ul>
+    </main>
+    <footer>
+        <a href='https://siu.edu/'>Southern Illinois University</a>
+    </footer>
+	<audio id="homepageloop" controls autoplay loop>
+		<source src="media/homepageloop.mp3">
+		<source src="media/homepageloop.ogg>
+	</audio>
+</body>
+</html>

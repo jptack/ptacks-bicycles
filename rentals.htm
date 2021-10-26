@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!--
+****************************************************
+Title: Ptack's Bicycles Rental Page
+Use: To display information on bike rentals
+Author: Joe Ptack
+School/Term: Southern Illinois University, Fall 2021
+Developed: September 12, 2021
+Tested: October 10, 2021 with Firefox
+*****************************************************
+-->
+<html lang="en-US">
+<head>
+        <meta charset="utf-8">
+        <title>Ptack's Bicycles Rental Page</title>
+        <meta name='description' content='Information on bicycle rentals'>
+        <meta name='keywords' content='Bicycles, Bikes, Rentals'>
+        <link rel="stylesheet" href="mystyle.css">
+		<link rel="stylesheet" href="slicknav.css">
+		<link rel="shortcut icon" href="media/favicon.ico">
+		<nav id="nav_menu">
+			<ul class="nav-menu-style">
+				<li><a href="index.htm">Home</a></li>
+				<li><a href="contact.htm">Contact</a></li>
+				<li><a href="rentals.htm">Rentals</a></li>
+				<li><a href="sales.htm">Sales</a></li>
+				<li><a href="services.htm">Services</a></li>
+			</ul>
+        </nav>
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+		<script src="jquery.slicknav.min.js"></script>
+		<script>
+			$('.nav-menu-style').slicknav();
+		</script>
+</head>
+<body>
+    <header>
+        <h1>Ptack's Bicycles</h1>
+            <address>2021 Bisickle Ln<br>
+                <a> Chicago, Illinois<br></a>
+                <a> 1-800-555-2453 </a>
+                    </address>
+            <h3>Chicago's Premier Bike Shop!</h3>
+    </header>
+    <main>
+        <h2>Bicycles Available to Rent:</h2>
+            <h3>Street Bikes:</h3>
+                <li>Acro Bike</li>
+                    <p>A more maneuverable bike for typical city riding</p>
+                    <p>Daily Rate: $19.99 | Weekly Rate: $79.99</p>                
+                <li>Mach Bike</li>
+                    <p>The fastest street bike available</p>    
+                    <p>Daily Rate: $24.99 | Weekly Rate: $89.99</p>
+            <h3>Mountain Bikes:</h3>
+                <li>The Mountaineer Premier</li>
+                    <p>Featuring over 30 gears for the steepest of slopes</p>    
+                    <p>Daily Rate: $32.99 | Weekly Rate: $149.99</p>
+                <li>MK2000</li>
+                    <p>100% titanium: the latest in mountain bike technology</p>    
+                    <p>Daily Rate: $49.99 | Weekly Rate: $199.99</p>
+    </main>
+    <aside>
+        <h1>Rental Policy:</h1>
+            <p>Prices shown do not include any additional equipment.
+            Helmets can be rented for an additional $4.99 a day or $14.99 a
+            week.</p>
+            <p>By renting a bike, customers agree to pay for any and all
+            damages sustained by said bikes over the course of their rental.</p>
+            <p>Bike rentals are based on availability, and work on a first come
+            first serve basis</p>
+    </aside>
+</body>
+</html>

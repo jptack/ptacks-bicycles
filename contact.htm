@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<!--
+****************************************************
+Title: Ptack's Bicycle Contact
+Use: Placeholder
+Author: Joe Ptack
+School/Term: Southern Illinois University, Fall 2021
+Developed: September 26, 2021
+Tested: October 24, 2021
+*****************************************************
+-->
+<html lang="en-US">
+<head>
+        <meta charset="utf-8">
+        <title>Contact</title>
+        <link rel="stylesheet" href="mystyle.css">
+		<link rel="stylesheet" href="slicknav.css">
+		<link rel="shortcut icon" href="media/favicon.ico">
+		<nav id="nav_menu">
+			<ul class="nav-menu-style">
+				<li><a href="index.htm">Home</a></li>
+				<li><a href="contact.htm">Contact</a></li>
+				<li><a href="rentals.htm">Rentals</a></li>
+				<li><a href="sales.htm">Sales</a></li>
+				<li><a href="services.htm">Services</a></li>
+			</ul>
+        </nav>
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+		<script src="jquery.slicknav.min.js"></script>
+		<script>
+			$('.nav-menu-style').slicknav();
+		</script>
+</head>
+<body>
+	<header class="contact">Have a question, comment, or concern? Don't hesitate to reach out to us.</header>
+	<form id="contact" action="response.htm" method="get">
+		<section class="contactform">
+		<label for="email">Email:</label>
+		<input type="email" id="email" required><br>
+		<label for="password">Password:</label>
+		<input type="text" id="password" required><br><br><br>
+		<label for="fullname">Name:</label>
+		<input type="text" id="fullname" pattern=".{15,25}" required title="Name must be between 15 and 25 characters"
+		placeholder="Enter your full name" required><br>
+		<label for="address">Address:</label>
+		<input type="text" id="address" required pattern=".{15,50}"
+		required title="Address must be between 15 and 50 characters"><br>
+		<label for="city">City:</label>
+		<input type="text" id="city" required pattern=".{4,25}"
+		required title="Name must be between 4 and 25 characters"><br>
+		<label for="state">State:</label>
+		<select id="state" required>
+			<option value="illinois">Illinois</option>
+			<option value="indiana">Indiana</option>
+			<option value="iowa">Iowa</option>
+			<option value="kentucky">Kentucky</option>
+			<option value="michigan">Michigan</option>
+			<option value="missouri">Missouri</option>
+			<option value="wisconsin">Wisconsin</option>
+		</select><br>
+		<label for="zip">Zip Code:</label>
+		<input type="text" id="zip" required
+		pattern="\d{5}([\-]\d{4})?"
+		title="Must be 99999 or 99999-9999">
+		<br>
+		<label for="phone">Phone Number:</label>
+		<input type="tel" id="phone" required
+		pattern="\d{3}[\-]\d{3}[\-]\d{4}"
+		title="Must be 999-999-9999">
+		<br><br>
+		<label for="date">Submission Date:</label>
+		<input type="date" id="date" required><br><br>
+		<label for="type">Inquiry Type:</label><br><br>
+		<input type="checkbox" id="type" value="sales" required>
+		<label for="sales">Sales</label><br>
+		<input type="checkbox" id="type" value="service">
+		<label for="service">Service</label><br>
+		<input type="checkbox" id="type" value="rentals">
+		<label for="rentals">Rentals</label><br><br>
+		<label for="bike">Bicycle Type:</label><br><br>
+		<input type="radio" name="bike" id="bike1" value="acro" required>
+		<label for="bike1">Acro Bike</label><br>
+		<input type="radio" name="bike" id="bike2" value="mach">
+		<label for="bike2">Mach Bike</label><br>
+		<input type="radio" name="bike" id="bike3" value="mprem">
+		<label for="bike3">Mountaineer Premier</label><br>
+		<input type="radio" name="bike" id="bike4" value="mk2000">
+		<label for="bike1">MK2000</label><br><br>
+		<label for="message">Message:</label><br>
+		<textarea id="message" placeholder="Enter your questions, comments, and/or concerns here" required
+		pattern=".{20,200}" required title="Comment must be between 20 and 200 characters"></textarea><br><br>
+		<input type="reset" id="reset" value="Reset">
+		<input type="submit" id="submit" value="Submit">
+	</form>
+</body>
+</html>
